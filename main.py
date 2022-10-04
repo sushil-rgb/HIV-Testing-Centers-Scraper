@@ -36,7 +36,7 @@ def clinic_links(base_url):
         return title_links
 
 
-# A function to pull data from individual links, the function all the information from the link to a list
+# A function to pull data from individual links, the function stores all the information from the link to a list:
 def scrapeMe(base_url):
     req = requests.get(base_url, headers={"User-Agent": agents})
     soup = BeautifulSoup(req.content, 'lxml')
